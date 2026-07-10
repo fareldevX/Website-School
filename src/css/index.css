@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gray-15: #262625;
+  --color-white-97: #f7f7f8;
+  --color-white-95: #f1f1f3;
+  --color-white-99: #fcfcfd;
+  --color-orange-50: #ff9500;
+  --color-orange-90: #ffeacc;
+  --color-orange-70: #ffbf66;
+  --color-orange-75: #ffca80;
+  --color-orange-97: #fff9f0;
+  --font-dmSans: "DM Sans", sans-serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-dmSans text-gray-15 bg-white-97;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply px-4 mx-auto sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-282.5 2xl:max-w-345;
+  }
+  button {
+    @apply cursor-pointer block;
+  }
+  p {
+    @apply text-sm md:text-base lg:text-lg leading-normal;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold text-balance leading-tight;
+  }
+  .section {
+    @apply pt-20 lg:mt-32;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+  h4 {
+    @apply text-2xl lg:text-[22px];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-orange-50 text-white px-6 py-3 rounded-md hover:bg-orange-50/90 transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-white px-6 py-3 border-white-95 rounded-md hover:bg-orange-90 transition-colors;
+  }
+}
+
+.navbar {
+  @apply fixed top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center -translate-y-full transition-transform;
+}
+
+.navbar.active {
+  @apply translate-y-0;
+}
