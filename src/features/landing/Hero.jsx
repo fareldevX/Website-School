@@ -5,59 +5,66 @@ const Marquee = RawMarquee?.default ?? RawMarquee;
 
 function Hero() {
   return (
-    <section>
-      <div className="container">
-        <div className="mt-12.5 md:mt-20 text-center">
-          <h1 className="text-2xl md:text-4xl">
+    <section className="bg-gray-50/50 py-16 md:py-24 overflow-hidden">
+      <div className="container mx-auto px-4">
+        <div className="text-center flex flex-col items-center">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight max-w-4xl leading-tight md:leading-tight">
             Selamat Datang di{" "}
-            <span className="text-orange-50">SMKN 1 Adiwerna</span> Pusat
-            Keunggulan Pendidikan Vokasi Berwawasan Lingkungan.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+              SMKN 1 Adiwerna
+            </span>{" "}
+            Pusat Keunggulan Pendidikan Vokasi Berwawasan Lingkungan.
           </h1>
 
-          <p className="mt-4">
+          <p className="mt-6 text-base md:text-lg text-gray-600 max-w-2xl leading-relaxed">
             Menghadirkan pendidikan kejuruan berkualitas tinggi untuk
             menjembatani talenta muda berbakat menuju industri global dan masa
             depan yang berkelanjutan.
           </p>
 
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
-            <button className="btn-primary max-sm:w-[80%]">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+            <button className="btn-primary w-[85%] sm:w-auto px-8 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-250 text-sm md:text-base">
               Jelajahi Jurusan
             </button>
-            <button className="btn-secondary max-sm:w-[80%]">
+            <button className="btn-secondary w-[85%] sm:w-auto px-8 py-3.5 bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium rounded-lg shadow-sm transition-all duration-250 text-sm md:text-base">
               PPDB Online
             </button>
           </div>
 
-          <div className="mt-8 lg:mt-25 relative overflow-hidden">
-            <Marquee pauseOnHover={true}>
-              {clients.map((client) => (
-                <div className="px-14 py-5" key={client.id}>
-                  <img
-                    src={client.img}
-                    alt="Logo Client"
-                    width={74}
-                    height={28}
-                  />
-                </div>
-              ))}
-            </Marquee>
+          <div className="mt-16 w-full max-w-5xl relative">
+            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">
+              Bekerja Sama Dengan Industri Terkemuka
+            </p>
 
-            <div className="absolute top-0 left-0 bg-linear-to-r from-white-97 via-white-97/80 to-transparent w-24 h-full z-10" />
-            <div className="absolute top-0 right-0 bg-linear-to-l from-white-97 via-white-97/80 to-transparent w-24 h-full z-10" />
+            <div className="relative overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-gray-50 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-gray-50 after:to-transparent">
+              <Marquee pauseOnHover={true} speed={40}>
+                {clients.map((client) => (
+                  <div
+                    className="px-10 py-4 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-200"
+                    key={client.id}
+                  >
+                    <img
+                      src={client.img}
+                      alt="Logo Client"
+                      className="h-8 md:h-10 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                ))}
+              </Marquee>
+            </div>
           </div>
 
-          <div className="mt-8 lg:mt-25 py-12 px-6 bg-white rounded-md">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center items-center">
+          <div className="mt-16 w-full max-w-5xl py-10 px-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 text-center items-center divide-x-0 sm:divide-x divide-gray-100">
               {statsData.map((stat) => (
                 <div
                   key={stat.id}
-                  className="flex flex-col items-center justify-center space-y-2"
+                  className="flex flex-col items-center justify-center space-y-1"
                 >
-                  <span className="text-5xl md:text-6xl font-semibold tracking-wide">
+                  <span className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 bg-gradient-to-b from-gray-900 to-gray-700 bg-clip-text text-transparent">
                     {stat.value}
                   </span>
-                  <span className="text-sm md:text-base font-light tracking-normal opacity-90 max-w-[200px]">
+                  <span className="text-xs md:text-sm font-medium text-gray-500 tracking-normal max-w-[150px] leading-tight">
                     {stat.label}
                   </span>
                 </div>
