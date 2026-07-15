@@ -51,10 +51,10 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-orange-50 text-white px-6 py-3 rounded-md hover:bg-orange-50/90 transition-colors;
+    @apply bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors shadow-sm;
   }
   .btn-secondary {
-    @apply bg-white px-6 py-3 border-white-95 rounded-md hover:bg-orange-90 transition-colors;
+    @apply bg-white px-6 py-3 border border-gray-200 rounded-lg hover:bg-gray-50 text-gray-700 transition-colors shadow-sm;
   }
 }
 

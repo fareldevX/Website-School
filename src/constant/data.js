@@ -12,11 +12,11 @@ import blog2 from "../assets/images/blog/blog2.jpg";
 import blog3 from "../assets/images/blog/blog3.jpeg";
 
 export const navItems = [
-  { id: 1, label: "Home", path: "home" },
-  { id: 2, label: "Courses", path: "courses" },
-  { id: 3, label: "About Us", path: "about" },
-  { id: 4, label: "Pricing", path: "home" },
-  { id: 5, label: "Contact", path: "contact" },
+  { id: 1, label: "Beranda", path: "/beranda" },
+  { id: 2, label: "Profil", path: "/profil" },
+  { id: 3, label: "Program Keahlian", path: "/program" },
+  { id: 4, label: "Berita", path: "/berita" },
+  { id: 5, label: "Kontak", path: "/kontak" },
 ];
 
 export const clients = [

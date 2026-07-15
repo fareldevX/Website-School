@@ -10,7 +10,7 @@ function Hero() {
         <div className="text-center flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight max-w-4xl leading-tight md:leading-tight">
             Selamat Datang di{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-amber-500">
               SMKN 1 Adiwerna
             </span>{" "}
             Pusat Keunggulan Pendidikan Vokasi Berwawasan Lingkungan.
