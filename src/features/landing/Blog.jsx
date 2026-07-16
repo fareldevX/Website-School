@@ -50,7 +50,7 @@ function Blog() {
 
                     <div className="pt-2">
                       <Link
-                        to={`/blog/${blog.id}`}
+                        to={`/berita/${blog.id}`}
                         className="group text-sm font-semibold text-blue-600 hover:text-blue-800 inline-flex items-center gap-1 cursor-pointer"
                       >
                         Baca Selengkapnya

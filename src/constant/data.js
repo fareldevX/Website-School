@@ -1,3 +1,5 @@
+import { LuNetwork, LuCar, LuSettings } from "react-icons/lu";
+
 import mitraMapan from "../assets/images/clients/mitra-mapan.png";
 import toa from "../assets/images/clients/toa.png";
 import barata from "../assets/images/clients/barata.png";
@@ -70,6 +72,51 @@ export const blogs = [
       ["Senin s.d Kamis : (07.00 s.d 15.30 WIB)", "Jumat (07.00 s.d 14.00 WIB"],
       "​Adapun bagi alumni yang sudah bekerja dan berhalangan hadir pada hari yang tersedia, harap menghubungi petugas TU a.n Sugeng Purwanto (083861347281)",
       "Perlu diketahui bahwa pengambilan ijazah ini tidak dipungut biaya apapun atau GRATIS",
+    ],
+  },
+];
+
+export const programs = [
+  {
+    id: 1,
+    slug: "teknik-jaringan-komputer-telekomunikasi",
+    title: "Teknik Jaringan Komputer dan Telekomunikasi",
+    shortTitle: "TJKT",
+    icon: LuNetwork,
+    desc: "Mempelajari instalasi jaringan komputer, administrasi server (Linux/Windows), cloud computing, fiber optic, serta keamanan infrastruktur jaringan standar industri.",
+    prospek: [
+      "Network Engineer",
+      "System Administrator",
+      "Cloud Practitioner",
+      "Full-Stack Web Developer",
+    ],
+  },
+  {
+    id: 2,
+    slug: "teknik-otomotif",
+    title: "Teknik Otomotif",
+    shortTitle: "TO",
+    icon: LuCar,
+    desc: "Fokus pada penguasaan teknologi kendaraan ringan, perawatan berkala mesin bensin dan diesel, kelistrikan otomotif, serta budaya kerja industri manufaktur.",
+    prospek: [
+      "Teknisi Otomotif",
+      "Service Advisor",
+      "Toolman",
+      "Quality Control Industri",
+    ],
+  },
+  {
+    id: 3,
+    slug: "teknik-pemesinan",
+    title: "Teknik Pemesinan",
+    shortTitle: "TP",
+    icon: LuSettings,
+    desc: "Mempelajari teknik pengelasan, pengoperasian mesin bubut, milling, serta pemograman mesin CNC tingkat tinggi untuk memproduksi produk manufaktur skala nasional.",
+    prospek: [
+      "Operator Mesin CNC",
+      "Drafter/CAD Designer",
+      "Teknisi Pemeliharaan Mesin",
+      "Wirausaha Bengkel Bubut",
     ],
   },
 ];

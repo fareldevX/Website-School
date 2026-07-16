@@ -3,7 +3,7 @@ import AboutImg from "../../assets/images/about.jpg";
 
 function About() {
   return (
-    <section className="mt-8 md:mt-14">
+    <section className="section">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           <div className="relative p-3 w-full bg-white border border-gray-100 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition-transform duration-300">
