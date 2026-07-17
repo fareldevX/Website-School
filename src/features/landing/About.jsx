@@ -6,23 +6,23 @@ function About() {
     <section className="section">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-          <div className="relative p-3 w-full bg-white border border-gray-100 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition-transform duration-300">
+          <div className="relative p-3 w-full bg-white dark:bg-dark-card border border-gray-100 dark:border-dark-border rounded-2xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition-all duration-300">
             <img
               src={AboutImg}
               alt="About Image"
               className="w-full h-87.5 md:h-112.5 object-cover rounded-xl"
             />
 
-            <div className="absolute bottom-0 left-0 right-0 lg:bottom-8 lg:left-8 lg:right-auto z-10 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-100 flex items-center gap-3">
+            <div className="absolute bottom-0 left-0 right-0 lg:bottom-8 lg:left-8 lg:right-auto z-10 bg-white/95 dark:bg-dark-card/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-100 dark:border-dark-border flex items-center gap-3 transition-colors">
               <div className="bg-blue-600 text-white w-12 h-12 flex items-center justify-center rounded-lg">
                 <LuStar size={24} />
               </div>
 
               <div>
-                <p className="text-xs text-gray-500 uppercase font-medium tracking-wider">
+                <p className="text-xs text-gray-500 dark:text-dark-text-muted uppercase font-medium tracking-wider">
                   Akreditasi
                 </p>
-                <p className="text-sm font-bold text-gray-800">
+                <p className="text-sm font-bold text-gray-800 dark:text-dark-text-main">
                   Bintang 5 & Terakreditasi A
                 </p>
               </div>
@@ -34,12 +34,12 @@ function About() {
               <span className="text-sm font-semibold uppercase tracking-widest text-blue-600 block">
                 Tentang Kami
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-dark-text-main leading-tight">
                 Membentuk Generasi Unggul, Berkarakter, dan Siap Kerja
               </h2>
             </div>
 
-            <p className="text-base text-gray-600 leading-relaxed text-justify">
+            <p className="text-base text-gray-600 dark:text-dark-text-muted leading-relaxed text-justify">
               SMK Negeri 1 Adiwerna berkomitmen untuk menyelenggarakan
               pendidikan vokasi terbaik yang menyelaraskan kurikulum sekolah
               dengan kebutuhan industri modern. Kami fokus membekali peserta
@@ -53,10 +53,10 @@ function About() {
                   <LuCheck size={14} />
                 </div>
                 <div>
-                  <h4 className="text-sm md:text-base font-semibold text-gray-800">
+                  <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Fasilitas Standar Industri
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500">
+                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
                     Bengkel dan laboratorium lengkap berbasis Teaching Factory
                     (Tefa).
                   </p>
@@ -67,10 +67,10 @@ function About() {
                   <LuCheck size={14} />
                 </div>
                 <div>
-                  <h4 className="text-sm md:text-base font-semibold text-gray-800">
+                  <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Kemitraan Luas
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500">
+                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
                     Bekerja sama erat dengan berbagai perusahaan nasional
                     terkemuka.
                   </p>
@@ -81,10 +81,10 @@ function About() {
                   <LuCheck size={14} />
                 </div>
                 <div>
-                  <h4 className="text-sm md:text-base font-semibold text-gray-800">
+                  <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Kurikulum Adaptif
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500">
+                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
                     Pembelajaran berbasis teknologi dan penalaran tingkat tinggi
                     (HOTS).
                   </p>
@@ -95,10 +95,10 @@ function About() {
                   <LuCheck size={14} />
                 </div>
                 <div>
-                  <h4 className="text-sm md:text-base font-semibold text-gray-800">
+                  <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Lingkungan Eco School
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500">
+                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
                     Suasana belajar yang asri, nyaman, dan berwawasan
                     lingkungan.
                   </p>

@@ -1,3 +1,5 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
 @import "tailwindcss";
 
 @theme {
@@ -11,6 +13,14 @@
   --color-orange-75: #ffca80;
   --color-orange-97: #fff9f0;
   --font-dmSans: "DM Sans", sans-serif;
+
+  --color-dark-bg: #0d121f;
+  --color-dark-card: #182032;
+  --color-dark-border: #24304a;
+  --color-dark-text-main: #f7f7f8;
+  --color-dark-text-muted: #94a3b8;
+  --color-dark-orange-50: #ffaa33;
+  --color-dark-orange-90: #2c1d0a;
 }
 
 @layer base {
@@ -18,7 +28,10 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-dmSans text-gray-15 bg-white-97;
+    @apply font-dmSans text-gray-15 bg-white-97 transition-colors duration-300;
+  }
+  html.dark body {
+    @apply bg-dark-bg text-white-97;
   }
 }
 
@@ -59,7 +72,7 @@
 }
 
 .navbar {
-  @apply fixed top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center -translate-y-full transition-transform;
+  @apply fixed top-0 left-0 w-full h-screen bg-white dark:bg-dark-bg flex flex-col items-center justify-center -translate-y-full transition-all;
 }
 
 .navbar.active {

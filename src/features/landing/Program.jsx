@@ -17,29 +17,29 @@ function Program() {
             const Icon = program.icon;
 
             return (
-              <div className="flex flex-col gap-2 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col gap-2 bg-white dark:bg-dark-card p-4 rounded-2xl border border-gray-100 dark:border-dark-border shadow-sm hover:shadow-xl transition-shadow duration-300">
                 <div className="relative w-full h-40 flex items-center justify-center bg-orange-100 rounded-lg">
                   <span className="absolute top-3 left-3 text-xs font-bold bg-white text-orange-50 px-3 py-1 rounded-md border border-gray-100 shadow-sm uppercase tracking-wider">
                     {program.shortTitle}
                   </span>
-                  <div className="w-14 h-14 bg-orange-50 rounded-lg flex items-center justify-center">
+                  <div className="w-14 h-14 bg-orange-500 rounded-lg flex items-center justify-center">
                     <Icon size={34} className="text-white" />
                   </div>
                 </div>
 
                 <div className="flex flex-col flex-1 justify-between space-y-3">
                   <div className="space-y-2 mt-4">
-                    <h3 className="text-lg font-bold text-gray-800 line-clamp-2">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-dark-text-main line-clamp-2">
                       {program.title}
                     </h3>
 
-                    <p className="text-sm text-gray-600 leading-relaxed line-clamp-3 text-justify">
+                    <p className="text-sm text-gray-600 dark:text-dark-text-muted leading-relaxed line-clamp-3 text-justify">
                       {program.desc}
                     </p>
 
                     <div className="flex flex-wrap gap-2 mt-4">
                       {program.prospek.map((prospek) => (
-                        <span className="text-xs font-medium px-3 py-1 bg-orange-100 text-orange-600 rounded-md">
+                        <span className="text-xs font-medium px-3 py-1 bg-orange-100 dark:bg-gray-600/50 text-orange-600 dark:text-white rounded-md">
                           {prospek}
                         </span>
                       ))}
@@ -49,7 +49,7 @@ function Program() {
                   <div className="py-3">
                     <Link
                       to={`/program-keahlian/${program.slug}`}
-                      className="block text-center text-sm font-semibold py-3 w-full text-white bg-orange-50 hover:bg-orange-50/80 transition-colors duration-300 rounded-xl shadow-md"
+                      className="btn-primary block text-center text-sm font-semibold w-full rounded-xl shadow-md"
                     >
                       Lihat Detail Jurusan
                     </Link>

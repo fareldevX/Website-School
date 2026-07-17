@@ -27,7 +27,7 @@ function Blog() {
               return (
                 <div
                   key={blog.id}
-                  className="flex flex-col h-full bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+                  className="flex flex-col h-full bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-dark-border"
                 >
                   <div className="relative aspect-video w-full overflow-hidden bg-gray-100">
                     <img
@@ -39,11 +39,11 @@ function Blog() {
 
                   <div className="p-5 flex flex-col flex-1 justify-between space-y-3">
                     <div className="space-y-2">
-                      <h4 className="text-lg font-bold text-gray-800 line-clamp-2 hover:text-blue-600 transition-colors cursor-pointer">
-                        <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
+                      <h4 className="text-lg font-bold text-gray-800 dark:text-dark-text-main line-clamp-2 hover:text-blue-600 transition-colors cursor-pointer">
+                        <Link to={`/berita/${blog.id}`}>{blog.title}</Link>
                       </h4>
 
-                      <p className="text-sm text-gray-600 leading-relaxed">
+                      <p className="text-sm text-gray-600 dark:text-dark-text-muted leading-relaxed text-justify">
                         {shortDesc}
                       </p>
                     </div>
