@@ -1,6 +1,6 @@
 function Action() {
   return (
-    <section className="section">
+    <section className="section pb-8 sm:pb-18">
       <div className="container">
         <div className="relative p-8 md:p-14 bg-white dark:bg-dark-card border border-gray-100 dark:border-dark-border rounded-3xl shadow-xl shadow-gray-100/50 dark:shadow-none transition-all duration-300 overflow-hidden group">
           <div className="absolute -top-24 -right-24 w-72 h-72 bg-orange-100/60 dark:bg-orange-950/20 rounded-full filter blur-3xl pointer-events-none group-hover:scale-110 transition-transform duration-500" />

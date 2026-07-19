@@ -1,4 +1,11 @@
-import { LuNetwork, LuCar, LuSettings } from "react-icons/lu";
+import {
+  LuNetwork,
+  LuCar,
+  LuSettings,
+  LuInstagram,
+  LuYoutube,
+  LuMail,
+} from "react-icons/lu";
 
 import mitraMapan from "../assets/images/clients/mitra-mapan.png";
 import toa from "../assets/images/clients/toa.png";
@@ -119,4 +126,17 @@ export const programs = [
       "Wirausaha Bengkel Bubut",
     ],
   },
+];
+
+export const socialMedia = [
+  { id: 1, icon: LuInstagram, href: "https://instagram.com" },
+  { id: 2, icon: LuYoutube, href: "https://youtube.com" },
+  { id: 3, icon: LuMail, href: "mailto:support@smkn1adiwerna.id" },
+];
+
+export const quickLinks = [
+  { label: "Informasi PPDB", path: "/ppdb" },
+  { label: "Program Keahlian", path: "/program-keahlian" },
+  { label: "Fasilitas Belajar", path: "/fasilitas" },
+  { label: "Bursa Kerja Khusus (BKK)", path: "/bkk" },
 ];

@@ -10,7 +10,7 @@ function Blog() {
         <div>
           <Title
             title="Berita"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit debitis nisi, aliquam molestias facere, ipsam aliquid harum consequuntur veritatis recusandae veniam exercitationem neque facilis pariatur."
+            text="Ikuti terus perkembangan informasi terkini, agenda kegiatan, pengumuman resmi, serta ragam cerita inspiratif dari seluruh civitas akademika kami di sini."
             link="View All"
           />
 

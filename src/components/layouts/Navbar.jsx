@@ -29,7 +29,11 @@ function Navbar() {
     >
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-10 w-auto object-contain brightness-0 dark:brightness-0 dark:invert transition-all duration-300"
+          />
         </Link>
 
         <div className={`navbar ${isOpen ? "active" : ""} lg:hidden z-50`}>

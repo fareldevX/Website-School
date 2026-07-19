@@ -12,7 +12,7 @@ function ProgramDetail() {
   const { slug } = useParams();
   const program = programs.find((p) => p.slug === slug);
   return (
-    <main className="min-h-screen bg-slate-50/50 pb-16">
+    <main className="min-h-screen bg-slate-50/50 dark:bg-dark-bg/50 pb-16">
       <section className="py-16 md:py-20 bg-linear-to-br from-[#0d1323] to-[#111a31] text-white border border-slate-800">
         <div className="container">
           <div className="space-y-6">
@@ -43,20 +43,20 @@ function ProgramDetail() {
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             <div className="lg:col-span-2 space-y-8">
-              <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4">
-                <h2 className="text-xl font-bold text-gray-950 flex items-center gap-2.5">
+              <div className="bg-white dark:bg-dark-card p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-dark-border shadow-sm space-y-4 transition-colors">
+                <h2 className="text-xl font-bold text-gray-950 dark:text-dark-text-main flex items-center gap-2.5 transition-colors">
                   <span className="p-2 bg-blue-50 text-[#1d4ed8] rounded-lg">
                     <LuCpu size={20} />
                   </span>
                   Deskripsi Kompetensi Keahlian
                 </h2>
-                <p className="text-gray-650 leading-relaxed text-justify text-sm md:text-base">
+                <p className="text-gray-650 dark:text-dark-text-muted leading-relaxed text-justify text-sm md:text-base transition-colors">
                   {program.desc}
                 </p>
               </div>
 
-              <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6">
-                <h2 className="text-xl font-bold text-gray-950 flex items-center gap-2.5">
+              <div className="bg-white dark:bg-dark-card p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-dark-border shadow-sm space-y-6 transition-colors">
+                <h2 className="text-xl font-bold text-gray-950 dark:text-dark-text-main flex items-center gap-2.5 transition-colors">
                   <span className="p-2 bg-blue-50 text-[#1d4ed8] rounded-lg">
                     <LuBookOpen size={20} />
                   </span>
@@ -64,39 +64,39 @@ function ProgramDetail() {
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-dark-bg border border-slate-100 dark:border-dark-border transition-colors">
                     <LuCheck
                       className="text-green-600 mt-0.5 shrink-0"
                       size={18}
                     />
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className="text-sm font-medium text-gray-700 dark:text-dark-text-muted transition colors">
                       Dasar-Dasar Kejuruan Kompetensi
                     </span>
                   </div>
-                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-dark-bg border border-slate-100 dark:border-dark-border transition-colors">
                     <LuCheck
                       className="text-green-600 mt-0.5 shrink-0"
                       size={18}
                     />
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className="text-sm font-medium text-gray-700 dark:text-dark-text-muted transition-colors">
                       Praktik Kerja Lapangan (PKL)
                     </span>
                   </div>
-                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-dark-bg border border-slate-100 dark:border-dark-border transition-colors">
                     <LuCheck
                       className="text-green-600 mt-0.5 shrink-0"
                       size={18}
                     />
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className="text-sm font-medium text-gray-700 dark:text-dark-text-muted transition-colors">
                       Implementasi Budaya Kerja Industri
                     </span>
                   </div>
-                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-dark-bg border border-slate-100 dark:border-dark-border transition-colors">
                     <LuCheck
                       className="text-green-600 mt-0.5 shrink-0"
                       size={18}
                     />
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className="text-sm font-medium text-gray-700 dark:text-dark-text-muted transition-colors">
                       Uji Kompetensi Keahlian (UKK)
                     </span>
                   </div>
@@ -105,9 +105,9 @@ function ProgramDetail() {
             </div>
 
             <div className="space-y-6 lg:sticky lg:top-24">
-              <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-4">
-                <h2 className="text-lg font-bold text-gray-950 flex items-center gap-2.5 border-b border-gray-100 pb-3">
-                  <span className="p-2 bg-orange-50 text-orange-600 rounded-lg">
+              <div className="bg-white dark:bg-dark-card p-6 rounded-2xl border border-gray-100 dark:border-dark-border shadow-sm space-y-4 transition-colors">
+                <h2 className="text-lg font-bold text-gray-950 dark:text-dark-text-main flex items-center gap-2.5 border-b border-gray-100 dark:border-dark-border pb-3 transition-colors">
+                  <span className="p-2 bg-orange-100 text-orange-500 rounded-lg">
                     <LuBriefcase size={18} />
                   </span>
                   Prospek Kerja Lulusan
@@ -117,7 +117,7 @@ function ProgramDetail() {
                   {program.prospek.map((karir, index) => (
                     <div
                       key={index}
-                      className="px-4 py-3 bg-linear-to-r from-slate-50 to-white border border-slate-150/60 rounded-xl font-semibold text-sm text-gray-700 hover:border-[#1d4ed8]/30 hover:shadow-sm transition-all duration-200"
+                      className="px-4 py-3 bg-linear-to-r from-slate-50 to-white dark:from-gray-900 dark:to-dark-bg border border-slate-150/60 dark:border-dark-border rounded-xl font-semibold text-sm text-gray-700 dark:text-dark-text-muted hover:border-[#1d4ed8]/30 dark:hover:border-dark-border/30 hover:shadow-sm transition-all duration-200"
                     >
                       {karir}
                     </div>
