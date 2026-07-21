@@ -1,9 +1,11 @@
+import { lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import MainLayout from "../layouts/MainLayout";
-import LandingLayout from "../layouts/LandingLayout";
-import BlogDetail from "../../features/landing/BlogDetail";
-import ProgramDetail from "../../features/landing/ProgramDetail";
+const MainLayout = lazy(() => import("../layouts/MainLayout"));
+const LandingLayout = lazy(() => import("../layouts/LandingLayout"));
+const BlogDetail = lazy(() => import("../../pages/landing/BlogDetail"));
+const ProgramDetail = lazy(() => import("../../pages/landing/ProgramDetail"));
+const PPDB = lazy(() => import("../../pages/main/PPDB"));
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,7 @@ const router = createBrowserRouter([
       { path: "/", element: <LandingLayout /> },
       { path: "/berita/:id", element: <BlogDetail /> },
       { path: "/program-keahlian/:slug", element: <ProgramDetail /> },
+      { path: "/ppdb", element: <PPDB /> },
     ],
   },
 ]);

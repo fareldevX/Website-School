@@ -5,6 +5,10 @@ import {
   LuInstagram,
   LuYoutube,
   LuMail,
+  LuFileText,
+  LuDownload,
+  LuUserCheck,
+  LuGraduationCap,
 } from "react-icons/lu";
 
 import mitraMapan from "../assets/images/clients/mitra-mapan.png";
@@ -16,14 +20,14 @@ import btech from "../assets/images/clients/btech.png";
 import citranet from "../assets/images/clients/citranet.png";
 import mitsubishi from "../assets/images/clients/mitsubishi.png";
 
-import blog1 from "../assets/images/blog/blog1.jpg";
-import blog2 from "../assets/images/blog/blog2.jpg";
-import blog3 from "../assets/images/blog/blog3.jpeg";
+import blog1 from "../assets/images/blogs/blog1.jpg";
+import blog2 from "../assets/images/blogs/blog2.jpg";
+import blog3 from "../assets/images/blogs/blog3.jpeg";
 
 export const navItems = [
-  { id: 1, label: "Beranda", path: "/beranda" },
+  { id: 1, label: "Beranda", path: "/" },
   { id: 2, label: "Profil", path: "/profil" },
-  { id: 3, label: "Program Keahlian", path: "/program" },
+  { id: 3, label: "Program Keahlian", path: "/program-keahlian" },
   { id: 4, label: "Berita", path: "/berita" },
   { id: 5, label: "Kontak", path: "/kontak" },
 ];
@@ -139,4 +143,39 @@ export const quickLinks = [
   { label: "Program Keahlian", path: "/program-keahlian" },
   { label: "Fasilitas Belajar", path: "/fasilitas" },
   { label: "Bursa Kerja Khusus (BKK)", path: "/bkk" },
+];
+
+export const workflow = [
+  {
+    step: "01",
+    title: "Isi Formulir",
+    desc: "Lengkapi data diri dan pilih jurusan impianmu melalui form online.",
+    icon: LuFileText,
+  },
+  {
+    step: "02",
+    title: "Upload Berkas",
+    desc: "Unggah pas foto, FC Rapor, dan Surat Keterangan Lulus (SKL).",
+    icon: LuDownload,
+  },
+  {
+    step: "03",
+    title: "Verifikasi Data",
+    desc: "Tim seleksi akan melakukan verifikasi berkas dan validasi data.",
+    icon: LuUserCheck,
+  },
+  {
+    step: "04",
+    title: "Pengumuman",
+    desc: "Cek status kelulusan melalui portal ini atau grup WhatsApp resmi.",
+    icon: LuGraduationCap,
+  },
+];
+
+export const requirements = [
+  "Fotokopi Ijazah / Surat Keterangan Lulus (SKL) disahkan Kepala Sekolah.",
+  "Fotokopi Rapor SMP/MTs Semester 1 s.d 5.",
+  "Fotokopi Kartu Keluarga (KK) dan Akta Kelahiran.",
+  "Pas Foto Terbaru ukuran 3x4 (3 lembar, background merah).",
+  "Fotokopi Sertifikat Prestasi / Kejuaraan (Minimal Tingkat Kabupaten - opsional).",
 ];

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LuStar, LuCheck } from "react-icons/lu";
 import AboutImg from "../../assets/images/about.jpg";
 
@@ -56,7 +57,7 @@ function About() {
                   <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Fasilitas Standar Industri
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
+                  <p className="text-xs md:text-sm text-gray-500 dark:text-dark-text-muted">
                     Bengkel dan laboratorium lengkap berbasis Teaching Factory
                     (Tefa).
                   </p>
@@ -70,7 +71,7 @@ function About() {
                   <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Kemitraan Luas
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
+                  <p className="text-xs md:text-sm text-gray-500 dark:text-dark-text-muted">
                     Bekerja sama erat dengan berbagai perusahaan nasional
                     terkemuka.
                   </p>
@@ -84,7 +85,7 @@ function About() {
                   <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Kurikulum Adaptif
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
+                  <p className="text-xs md:text-sm text-gray-500 dark:text-dark-text-muted">
                     Pembelajaran berbasis teknologi dan penalaran tingkat tinggi
                     (HOTS).
                   </p>
@@ -98,7 +99,7 @@ function About() {
                   <h4 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-300">
                     Lingkungan Eco School
                   </h4>
-                  <p className="text-xs md:text-sm text-gray-500 text-dark-text-muted">
+                  <p className="text-xs md:text-sm text-gray-500 dark:text-dark-text-muted">
                     Suasana belajar yang asri, nyaman, dan berwawasan
                     lingkungan.
                   </p>
@@ -107,12 +108,12 @@ function About() {
             </div>
 
             <div className="pt-4 flex flex-wrap gap-4">
-              <button className="btn-primary font-medium">
+              <Link to="/profil" className="btn-primary font-medium">
                 Pelajari Selengkapnya
-              </button>
-              <a href="/kontak" className="btn-secondary font-medium">
+              </Link>
+              <Link to="/kontak" className="btn-secondary font-medium">
                 Hubungi Kami
-              </a>
+              </Link>
             </div>
           </div>
         </div>

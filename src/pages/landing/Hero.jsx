@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import RawMarquee from "react-fast-marquee";
 import { clients, statsData } from "../../constant/data";
 
@@ -23,12 +24,18 @@ function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-            <button className="btn-primary w-[85%] sm:w-auto px-8 py-3.5 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-250 text-sm md:text-base">
+            <Link
+              to="/program-keahlian"
+              className="btn-primary w-[85%] sm:w-auto px-8 py-3.5 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-250 text-sm md:text-base"
+            >
               Jelajahi Jurusan
-            </button>
-            <button className="btn-secondary w-[85%] sm:w-auto px-8 py-3.5 text-gray-700 font-medium rounded-lg shadow-sm transition-all duration-250 text-sm md:text-base">
+            </Link>
+            <Link
+              to="/ppdb"
+              className="btn-secondary w-[85%] sm:w-auto px-8 py-3.5 text-gray-700 font-medium rounded-lg shadow-sm transition-all duration-250 text-sm md:text-base"
+            >
               PPDB Online
-            </button>
+            </Link>
           </div>
 
           <div className="mt-16 w-full max-w-5xl relative">

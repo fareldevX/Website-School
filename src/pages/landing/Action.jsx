@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Action() {
   return (
     <section className="section pb-8 sm:pb-18">
@@ -22,12 +24,15 @@ function Action() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 w-full sm:w-auto">
-              <button className="btn-primary w-full sm:w-auto">
+              <Link
+                to="/program-keahlian"
+                className="btn-primary w-full sm:w-auto"
+              >
                 Jelajahi Jurusan
-              </button>
-              <button className="btn-secondary w-full sm:w-auto">
+              </Link>
+              <Link to="/ppdb" className="btn-secondary w-full sm:w-auto">
                 PPDB Online
-              </button>
+              </Link>
             </div>
           </div>
         </div>

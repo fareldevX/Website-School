@@ -10,6 +10,7 @@ function Program() {
           title="Program Keahlian"
           text="Pilihan program keahlian strategis yang dirancang khusus untuk membekali siswa dengan keterampilan praktis, sertifikasi industri, dan karakter unggul guna mencetak generasi yang siap kerja serta mampu bersaing di era digital global."
           link="View All"
+          href="/program-keahlian"
         />
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

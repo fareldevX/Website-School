@@ -1,4 +1,6 @@
-function Title({ title, text, link }) {
+import { Link } from "react-router-dom";
+
+function Title({ title, text, link, href }) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-4">
       <div>
@@ -8,7 +10,9 @@ function Title({ title, text, link }) {
         </p>
       </div>
 
-      <button className="btn-secondary text-sm font-semibold">{link}</button>
+      <Link to={href} className="btn-secondary text-sm font-semibold">
+        {link}
+      </Link>
     </div>
   );
 }

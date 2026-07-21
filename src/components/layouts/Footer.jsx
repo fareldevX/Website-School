@@ -63,9 +63,9 @@ function Footer() {
               Layanan Siswa
             </h4>
             <div className="flex flex-col gap-3.5">
-              {quickLinks.map((link) => (
+              {quickLinks.map((link, index) => (
                 <Link
-                  key={link.id}
+                  key={index}
                   to={link.path}
                   className="text-sm text-gray-500 dark:text-dark-text-muted hover:text-orange-500 dark:hover:text-dark-text-main transition-colors font-medium"
                 >
