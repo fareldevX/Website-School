@@ -93,18 +93,18 @@ function Footer() {
               </div>
               <div className="space-y-2.5 pt-2 border-t border-gray-100 dark:border-dark-border/40">
                 <a
-                  href="mailto:support@webland.id"
+                  href="mailto:mail@smkn1adw.sch.id"
                   className="flex items-center gap-3 text-sm text-gray-500 dark:text-dark-text-muted hover:text-orange-500 dark:hover:text-dark-text-main transition-colors"
                 >
                   <LuMail className="text-orange-500" size={16} />
-                  support@smkn1adiwerna.id
+                  mail@smkn1adw.sch.id
                 </a>
                 <a
-                  href="tel:+628123456789"
+                  href="tel:+(0283) 443768"
                   className="flex items-center gap-3 text-sm text-gray-500 dark:text-dark-text-muted hover:text-orange-500 dark:hover:text-dark-text-main transition-colors"
                 >
                   <LuPhone className="text-orange-500" size={16} />
-                  +62 8123456789
+                  (0283) 443768
                 </a>
               </div>
             </div>

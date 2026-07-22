@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navbar from "../../components/layouts/Navbar";
 import Footer from "../../components/layouts/Footer";
 
@@ -22,6 +22,7 @@ function MainLayout() {
         </Suspense>
       </main>
       <Footer />
+      <ScrollRestoration />
     </>
   );
 }

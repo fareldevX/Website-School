@@ -133,9 +133,13 @@ export const programs = [
 ];
 
 export const socialMedia = [
-  { id: 1, icon: LuInstagram, href: "https://instagram.com" },
-  { id: 2, icon: LuYoutube, href: "https://youtube.com" },
-  { id: 3, icon: LuMail, href: "mailto:support@smkn1adiwerna.id" },
+  {
+    id: 1,
+    icon: LuInstagram,
+    href: "https://www.instagram.com/smknegeri1adiwerna/",
+  },
+  { id: 2, icon: LuYoutube, href: "https://www.youtube.com/@ADBtv" },
+  { id: 3, icon: LuMail, href: "mailto:mail@smkn1adw.sch.id" },
 ];
 
 export const quickLinks = [

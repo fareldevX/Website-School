@@ -6,6 +6,7 @@ const LandingLayout = lazy(() => import("../layouts/LandingLayout"));
 const BlogDetail = lazy(() => import("../../pages/landing/BlogDetail"));
 const ProgramDetail = lazy(() => import("../../pages/landing/ProgramDetail"));
 const PPDB = lazy(() => import("../../pages/main/PPDB"));
+const Profile = lazy(() => import("../../pages/main/Profile"));
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "/berita/:id", element: <BlogDetail /> },
       { path: "/program-keahlian/:slug", element: <ProgramDetail /> },
       { path: "/ppdb", element: <PPDB /> },
+      { path: "/profil", element: <Profile /> },
     ],
   },
 ]);

@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { workflow, requirements } from "../../constant/data";
-import {
-  LuCalendar,
-  LuCheck,
-  LuCircleHelp,
-  LuSend,
-  LuArrowRight,
-} from "react-icons/lu";
+import BannerPage from "../../components/common/BannerPage";
+import { LuCalendar, LuCheck, LuCircleHelp, LuSend } from "react-icons/lu";
 
 function PPDB() {
   const [formData, setFormData] = useState({
@@ -26,33 +21,20 @@ function PPDB() {
 
   return (
     <main className="min-h-screen bg-white-97 dark:bg-dark-bg pb-20 transition-colors">
-      <section className="py-16 md:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [bg-size:16px_16px]"></div>
-        <div className="container relative z-10 text-center space-y-4">
-          <span className="px-3.5 py-1 text-xs font-bold bg-orange-500 text-white rounded-full uppercase tracking-wider inline-block shadow-lg shadow-orange-500/20">
-            Tahun Ajaran 2026/2027
-          </span>
-          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
-            Penerimaan Peserta Didik Baru (PPDB)
-          </h1>
-          <p className="text-sm md:text-base text-gray-500 dark:text-dark-text-muted max-w-2xl mx-auto leading-relaxed transition-colors">
-            Bergabunglah menjadi bagian dari SMK Negeri 1 Adiwerna. Wujudkan
-            cita-citamu menjadi tenaga ahli profesional yang siap bersaing di
-            dunia industri modern.
-          </p>
-          <div className="pt-6 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#form-pendaftaran"
-              className="btn-primary font-bold inline-flex items-center gap-2"
-            >
-              Daftar Sekarang <LuArrowRight size={18} />
-            </a>
-            <a href="#persyaratan" className="btn-secondary font-semibold">
-              Lihat Persyaratan
-            </a>
-          </div>
-        </div>
-      </section>
+      <BannerPage
+        tag="Tahun Ajaran 2026/2027"
+        title="Penerimaan Peserta Didik Baru (PPDB)"
+        description="Bergabunglah menjadi bagian dari SMK Negeri 1 Adiwerna. Wujudkan cita-citamu menjadi tenaga ahli profesional yang siap bersaing di dunia industri modern."
+        buttons={[
+          {
+            text: "Isi Formulir",
+            href: "#form-pendaftaran",
+            variant: "primary",
+            showIcon: true,
+          },
+          { text: "Lihat Syarat", href: "#persyaratan", variant: "secondary" },
+        ]}
+      />
 
       <div className="container mt-6 space-y-16">
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -152,7 +134,7 @@ function PPDB() {
         </section>
 
         <div
-          className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"
+          className="scroll-mt-24 md:scroll-mt-34 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"
           id="persyaratan"
         >
           <div className="lg:col-span-5 space-y-6">
@@ -188,7 +170,10 @@ function PPDB() {
             </div>
           </div>
 
-          <div className="lg:col-span-7" id="form-pendaftaran">
+          <div
+            className="scroll-mt-22 md:scroll-mt-34 lg:col-span-7"
+            id="form-pendaftaran"
+          >
             <div className="bg-white dark:bg-dark-card border border-gray-100 dark:border-dark-border p-6 md:p-8 rounded-3xl shadow-xl space-y-6">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-dark-text-main">
