@@ -9,6 +9,16 @@ import {
   LuDownload,
   LuUserCheck,
   LuGraduationCap,
+  LuAward,
+  LuSparkles,
+  LuBuilding2,
+  LuZap,
+  LuPalette,
+  LuFlame,
+  LuCpu,
+  LuRadio,
+  LuPenTool,
+  LuShieldCheck,
 } from "react-icons/lu";
 
 import mitraMapan from "../assets/images/clients/mitra-mapan.png";
@@ -130,6 +140,118 @@ export const programs = [
       "Wirausaha Bengkel Bubut",
     ],
   },
+  {
+    id: 4,
+    slug: "teknik-ketenagalistrikan",
+    title: "Teknik Ketenagalistrikan",
+    shortTitle: "TITL",
+    icon: LuZap,
+    desc: "Mempelajari instalasi penerangan & tenaga listrik bangunan, otomatisasi industri menggunakan PLC, serta pemeliharaan jaringan distribusi tenaga listrik.",
+    prospek: [
+      "Teknisi Instalasi Listrik",
+      "PLC Programmer",
+      "Maintenance Engineer",
+      "Panel Maker",
+    ],
+  },
+  {
+    id: 5,
+    slug: "desain-pemodelan-informasi-bangunan",
+    title: "Desain Pemodelan dan Informasi Bangunan",
+    shortTitle: "DPIB",
+    icon: LuBuilding2,
+    desc: "Fokus pada perencanaan gambar arsitektur & struktur bangunan menggunakan perangkat lunak CAD, BIM (Building Information Modeling), serta analisis RAB.",
+    prospek: [
+      "Drafter Arsitektur",
+      "BIM Modeler",
+      "Surveyor Lapangan",
+      "Estimator Biaya Proyek",
+    ],
+  },
+  {
+    id: 6,
+    slug: "desain-komunikasi-visual",
+    title: "Desain Komunikasi Visual",
+    shortTitle: "DKV",
+    icon: LuPalette,
+    desc: "Mempelajari seni desain grafis, fotografi, videografi, animasi 2D/3D, brand identity, serta pembuatan media promosi kreatif untuk industri digital.",
+    prospek: [
+      "Graphic Designer",
+      "Content Creator",
+      "UI/UX Designer",
+      "Videographer / Editor",
+    ],
+  },
+  {
+    id: 7,
+    slug: "teknik-pengelasan",
+    title: "Teknik Pengelasan dan Fabrikasi Logam",
+    shortTitle: "TPL",
+    icon: LuFlame,
+    desc: "Mendalami teknik pengelasan SMAW, GMAW, GTAW sesuai standar AWS, pembentukan plat logam, serta analisis kualitas hasil lasan industri.",
+    prospek: [
+      "Certified Welder",
+      "Welding Inspector",
+      "Teknisi Fabrikasi Logam",
+      "Wirausaha Konstruksi",
+    ],
+  },
+  {
+    id: 8,
+    slug: "teknik-elektronika-industri",
+    title: "Teknik Elektronika Industri",
+    shortTitle: "TEI",
+    icon: LuCpu,
+    desc: "Mempelajari mikrokontroler, IoT (Internet of Things), perakitan komponen elektronika presisi, dan perawatan sistem kontrol otomatis pabrik.",
+    prospek: [
+      "Teknisi Elektronika",
+      "IoT Developer",
+      "Automation Engineer",
+      "Quality Assurance",
+    ],
+  },
+  {
+    id: 9,
+    slug: "teknik-jaringan-akses-telekomunikasi",
+    title: "Teknik Jaringan Akses Telekomunikasi",
+    shortTitle: "TJAT",
+    icon: LuRadio,
+    desc: "Mempelajari transmisi data nirkabel (wireless), penyambungan & pengukuran kabel Fiber To The Home (FTTH), serta infrastruktur jaringan seluler.",
+    prospek: [
+      "Teknisi Fiber Optic",
+      "Drive Test Engineer",
+      "Network Technician",
+      "RF Field Engineer",
+    ],
+  },
+  {
+    id: 10,
+    slug: "teknik-grafika",
+    title: "Teknik Grafika",
+    shortTitle: "TG",
+    icon: LuPenTool,
+    desc: "Mempelajari proses percetakan modern (offset & digital printing), teknik jilid kemasan, prepress design, serta manajemen usaha cetak.",
+    prospek: [
+      "Operator Mesin Cetak",
+      "Prepress Operator",
+      "Packaging Designer",
+      "Wirausaha Printing",
+    ],
+  },
+  {
+    id: 11,
+    slug: "teknik-elektronika-komunikasi",
+    title: "Teknik Elektronika Komunikasi",
+    shortTitle: "TEK",
+    icon: LuShieldCheck,
+    desc: "Mempelajari sistem pemancar radio & TV, teknik navigasi udara/laut, perbaikan perangkat komunikasi radio, serta sistem sensor frekuensi.",
+    prospek: [
+      "Teknisi Pemancar Radio",
+      "Avionics Technician",
+      "Teknisi Radar & Navigasi",
+      "Repair Specialist",
+    ],
+  },
 ];
 
 export const socialMedia = [
@@ -182,4 +304,29 @@ export const requirements = [
   "Fotokopi Kartu Keluarga (KK) dan Akta Kelahiran.",
   "Pas Foto Terbaru ukuran 3x4 (3 lembar, background merah).",
   "Fotokopi Sertifikat Prestasi / Kejuaraan (Minimal Tingkat Kabupaten - opsional).",
+];
+
+export const missions = [
+  "Menyelenggarakan pembelajaran berbasis proyek dan praktik standar industri.",
+  "Menanamkan budaya kerja (5R) serta nilai religius dan kedisiplinan pada siswa.",
+  "Mengembangkan kemitraan strategis dengan dunia usaha dan dunia industri (DUDI).",
+  "Meningkatkan kualitas sarana dan prasarana laboratorium berbasis teknologi terkini.",
+];
+
+export const values = [
+  {
+    title: "Integritas & Karakter",
+    desc: "Disiplin, jujur, dan bertanggung jawab terhadap tugas akademik maupun standar lingkungan kerja.",
+    icon: LuAward,
+  },
+  {
+    title: "Inovasi & Teknologi",
+    desc: "Selalu adaptif terhadap perkembangan teknologi infrastruktur modern dan software industri.",
+    icon: LuSparkles,
+  },
+  {
+    title: "Kolaborasi Industri",
+    desc: "Membangun kemitraan erat dengan DUDI untuk penyelarasan kurikulum dan penyaluran kerja.",
+    icon: LuBuilding2,
+  },
 ];

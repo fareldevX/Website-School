@@ -1,12 +1,10 @@
 import BannerPage from "../../components/common/BannerPage";
+import { missions, values } from "../../constant/data";
 import {
   LuTarget,
   LuCompass,
-  LuAward,
   LuUsers,
-  LuBuilding2,
   LuCheck,
-  LuSparkles,
   LuHistory,
 } from "react-icons/lu";
 
@@ -93,12 +91,7 @@ function Profile() {
               Misi Sekolah
             </h3>
             <ul className="space-y-3 text-xs md:text-sm text-gray-600 dark:text-dark-text-muted">
-              {[
-                "Menyelenggarakan pembelajaran berbasis proyek dan praktik standar industri.",
-                "Menanamkan budaya kerja (5R) serta nilai religius dan kedisiplinan pada siswa.",
-                "Mengembangkan kemitraan strategis dengan dunia usaha dan dunia industri (DUDI).",
-                "Meningkatkan kualitas sarana dan prasarana laboratorium berbasis teknologi terkini.",
-              ].map((misi, idx) => (
+              {missions.map((misi, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <LuCheck
                     className="text-orange-500 mt-0.5 shrink-0"
@@ -143,38 +136,26 @@ function Profile() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Integritas & Karakter",
-                desc: "Disiplin, jujur, dan bertanggung jawab terhadap tugas akademik maupun standar lingkungan kerja.",
-                icon: <LuAward size={22} />,
-              },
-              {
-                title: "Inovasi & Teknologi",
-                desc: "Selalu adaptif terhadap perkembangan teknologi infrastruktur modern dan software industri.",
-                icon: <LuSparkles size={22} />,
-              },
-              {
-                title: "Kolaborasi Industri",
-                desc: "Membangun kemitraan erat dengan DUDI untuk penyelarasan kurikulum dan penyaluran kerja.",
-                icon: <LuBuilding2 size={22} />,
-              },
-            ].map((nilai, idx) => (
-              <div
-                key={idx}
-                className="bg-white dark:bg-dark-card border border-gray-100 dark:border-dark-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-all space-y-3"
-              >
-                <div className="p-3 bg-slate-100 dark:bg-slate-800 text-blue-600 dark:text-blue-400 rounded-xl w-fit">
-                  {nilai.icon}
+            {values.map((value, idx) => {
+              const Icon = value.icon;
+
+              return (
+                <div
+                  key={idx}
+                  className="bg-white dark:bg-dark-card border border-gray-100 dark:border-dark-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-all space-y-3"
+                >
+                  <div className="p-3 bg-slate-100 dark:bg-slate-800 text-blue-600 dark:text-blue-400 rounded-xl w-fit">
+                    <Icon size={22} />
+                  </div>
+                  <h4 className="font-bold text-base text-gray-900 dark:text-dark-text-main">
+                    {value.title}
+                  </h4>
+                  <p className="text-xs text-gray-500 dark:text-dark-text-muted leading-relaxed">
+                    {value.desc}
+                  </p>
                 </div>
-                <h4 className="font-bold text-base text-gray-900 dark:text-dark-text-main">
-                  {nilai.title}
-                </h4>
-                <p className="text-xs text-gray-500 dark:text-dark-text-muted leading-relaxed">
-                  {nilai.desc}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       </div>

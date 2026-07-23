@@ -14,53 +14,51 @@ function Program() {
         />
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {programs.map((program) => {
+          {programs.slice(0, 3).map((program) => {
             const Icon = program.icon;
 
             return (
               <div
                 key={program.id}
-                className="flex flex-col gap-2 bg-white dark:bg-dark-card p-4 rounded-2xl border border-gray-100 dark:border-dark-border shadow-sm hover:shadow-xl transition-shadow duration-300"
+                className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between"
               >
-                <div className="relative w-full h-40 flex items-center justify-center bg-orange-100 rounded-lg">
-                  <span className="absolute top-3 left-3 text-xs font-bold bg-white text-orange-50 px-3 py-1 rounded-md border border-gray-100 shadow-sm uppercase tracking-wider">
-                    {program.shortTitle}
-                  </span>
-                  <div className="w-14 h-14 bg-orange-500 rounded-lg flex items-center justify-center">
-                    <Icon size={34} className="text-white" />
-                  </div>
-                </div>
+                <div className="p-6">
+                  <div className="bg-[#FFF6E9] dark:bg-orange-950/20 rounded-xl p-8 relative flex items-center justify-center mb-6">
+                    <span className="absolute top-3 left-3 bg-white dark:bg-gray-800 text-orange-600 font-bold text-xs px-3 py-1 rounded-md shadow-xs border border-orange-100 dark:border-transparent">
+                      {program.shortTitle}
+                    </span>
 
-                <div className="flex flex-col flex-1 justify-between space-y-3">
-                  <div className="space-y-2 mt-4">
-                    <h3 className="text-lg font-bold text-gray-800 dark:text-dark-text-main line-clamp-2">
-                      {program.title}
-                    </h3>
-
-                    <p className="text-sm text-gray-600 dark:text-dark-text-muted leading-relaxed line-clamp-3 text-justify">
-                      {program.desc}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {program.prospek.map((prospek, index) => (
-                        <span
-                          key={index}
-                          className="text-xs font-medium px-3 py-1 bg-orange-100 dark:bg-gray-600/50 text-orange-600 dark:text-white rounded-md"
-                        >
-                          {prospek}
-                        </span>
-                      ))}
+                    <div className="bg-orange-500 text-white p-3.5 rounded-xl shadow-md shadow-orange-500/20">
+                      <Icon size={32} />
                     </div>
                   </div>
 
-                  <div className="py-3">
-                    <Link
-                      to={`/program-keahlian/${program.slug}`}
-                      className="btn-primary block text-center text-sm font-semibold w-full rounded-xl shadow-md"
-                    >
-                      Lihat Detail Jurusan
-                    </Link>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white leading-snug mb-3">
+                    {program.title}
+                  </h3>
+                  <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400 line-clamp-3 leading-relaxed mb-6">
+                    {program.desc}
+                  </p>
+
+                  <div className="flex flex-wrap gap-1.5 mb-2">
+                    {program.prospek.map((item, idx) => (
+                      <span
+                        key={idx}
+                        className="bg-[#FFF6E9] dark:bg-orange-950/30 text-orange-600 dark:text-orange-400 text-[11px] font-semibold px-2.5 py-1 rounded-md"
+                      >
+                        {item}
+                      </span>
+                    ))}
                   </div>
+                </div>
+
+                <div className="p-6 pt-0">
+                  <Link
+                    to={`/program-keahlian/${program.slug}`}
+                    className="w-full inline-block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition text-sm shadow-md shadow-orange-500/20"
+                  >
+                    Lihat Detail Jurusan
+                  </Link>
                 </div>
               </div>
             );

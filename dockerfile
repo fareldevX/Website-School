@@ -1,6 +1,6 @@
 FROM node:16-alpine
 
-WOKDIR /app
+WORKDIR /app
 
 COPY package*.json .
 
