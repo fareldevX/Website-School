@@ -21,7 +21,7 @@ function SkillProgram() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50/50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 pb-20">
+    <div className="min-h-screen bg-white-97 dark:bg-dark-bg text-gray-800 dark:text-dark-text-main pb-20">
       <BannerPage
         tag="Program Keahlian"
         title="Pilihan Jurusan Unggulan Masa Depan"
@@ -29,7 +29,7 @@ function SkillProgram() {
       />
 
       <section className="max-w-6xl mx-auto px-4 -mt-6 mb-12 relative z-20">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="bg-white dark:bg-dark-card rounded-2xl shadow-sm border border-gray-100 dark:border-dark-border p-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="space-y-1">
             <div className="inline-flex p-2.5 bg-orange-100 dark:bg-orange-950/40 rounded-xl text-orange-500 mb-1">
               <LuBuilding size={24} />
@@ -80,7 +80,7 @@ function SkillProgram() {
             placeholder="Cari jurusan atau kata kunci (misal: TJKT, Otomotif)..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition"
+            className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-card text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition"
           />
         </div>
       </section>
@@ -93,7 +93,7 @@ function SkillProgram() {
               return (
                 <div
                   key={prog.id}
-                  className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between"
+                  className="bg-white dark:bg-dark-card rounded-2xl border border-gray-100 dark:border-dark-border shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between"
                 >
                   <div className="p-6">
                     <div className="bg-[#FFF6E9] dark:bg-orange-950/20 rounded-xl p-8 relative flex items-center justify-center mb-6">
@@ -157,7 +157,7 @@ function SkillProgram() {
         </div>
 
         <div className="space-y-4">
-          <div className="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700">
+          <div className="bg-white dark:bg-dark-card p-5 rounded-xl border border-gray-100 dark:border-dark-border">
             <h4 className="font-bold text-sm text-gray-900 dark:text-white mb-1">
               Bagaimana cara menentukan jurusan yang cocok?
             </h4>
@@ -167,7 +167,7 @@ function SkillProgram() {
               yang tertera di masing-masing card jurusan.
             </p>
           </div>
-          <div className="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700">
+          <div className="bg-white dark:bg-dark-card p-5 rounded-xl border border-gray-100 dark:border-dark-border">
             <h4 className="font-bold text-sm text-gray-900 dark:text-white mb-1">
               Apakah bisa berpindah jurusan setelah diterima?
             </h4>

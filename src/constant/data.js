@@ -330,3 +330,66 @@ export const values = [
     icon: LuBuilding2,
   },
 ];
+
+export const categories = [
+  "Semua",
+  "Pengumuman",
+  "Prestasi",
+  "Kegiatan",
+  "PPDB",
+];
+
+export const newsArticles = [
+  {
+    id: 1,
+    slug: "smkn-1-adiwerna-raih-juara-1-lks-tingkat-provinsi",
+    title: "SMKN 1 Adiwerna Raih Juara 1 LKS Tingkat Provinsi Jawa Tengah",
+    excerpt:
+      "Siswa jurusan TJKT berhasil menyabet medali emas dalam ajang Lomba Kompetensi Siswa (LKS) bidang IT Network System Administration.",
+    category: "Prestasi",
+    date: "20 Jul 2026",
+    readTime: "3 menit baca",
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+  },
+  {
+    id: 2,
+    slug: "pembukaan-pendaftaran-ppdb-gelombang-2",
+    title: "Informasi Pembukaan Pendaftaran PPDB Gelombang 2",
+    excerpt:
+      "Pendaftaran calon peserta didik baru gelombang 2 resmi dibuka. Simak alur dan persyaratan berkas yang harus disiapkan.",
+    category: "PPDB",
+    date: "18 Jul 2026",
+    readTime: "2 menit baca",
+    image:
+      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+    isFeatured: false,
+  },
+  {
+    id: 3,
+    slug: "kunjungan-industri-siswa-ke-pt-telekomunikasi",
+    title: "Kunjungan Industri Siswa TJKT & TEI ke Data Center Utama",
+    excerpt:
+      "Meningkatkan wawasan industri, ratusan siswa melakukan kunjungan lapangan untuk mempelajari infrastruktur cloud secara langsung.",
+    category: "Kegiatan",
+    date: "15 Jul 2026",
+    readTime: "4 menit baca",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    isFeatured: false,
+  },
+  {
+    id: 4,
+    slug: "jadwal-pelaksanaan-asesmen-sumatif-akhir-semester",
+    title: "Jadwal dan Ketentuan Asesmen Sumatif Akhir Semester (ASAS)",
+    excerpt:
+      "Seluruh siswa diimbau untuk mempersiapkan diri dan mengecek jadwal ujian berbasis digital melalui portal LMS sekolah.",
+    category: "Pengumuman",
+    date: "10 Jul 2026",
+    readTime: "3 menit baca",
+    image:
+      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80",
+    isFeatured: false,
+  },
+];

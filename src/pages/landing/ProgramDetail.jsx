@@ -17,7 +17,7 @@ function ProgramDetail() {
         <div className="container">
           <div className="space-y-6">
             <Link
-              to="/"
+              to="/program-keahlian"
               className="group inline-flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white mb-6 transition-colors"
             >
               <LuArrowLeft

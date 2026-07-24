@@ -20,7 +20,7 @@ function Program() {
             return (
               <div
                 key={program.id}
-                className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between"
+                className="bg-white dark:bg-dark-card rounded-2xl border border-gray-100 dark:border-dark-border shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between"
               >
                 <div className="p-6">
                   <div className="bg-[#FFF6E9] dark:bg-orange-950/20 rounded-xl p-8 relative flex items-center justify-center mb-6">
