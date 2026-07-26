@@ -51,13 +51,15 @@ function Navbar() {
             <LuX size={24} />
           </button>
 
-          <nav className="flex flex-col items-center gap-5 mt-16">
+          <nav className="flex flex-col items-center gap-4 mt-16">
             {navItems.map((item) => (
               <NavLink
                 key={item.id}
                 to={item.path}
                 onClick={() => setIsOpen(false)}
-                className="font-medium text-gray-700 dark:text-dark-text-muted hover:text-orange-500 dark:hover:text-dark-text-main transition-colors text-lg"
+                className={({ isActive }) =>
+                  `relative font-medium ${isActive ? "text-orange-500 dark:text-white" : "hover:text-orange-500 dark:hover:text-dark-text-main"} text-gray-700 dark:text-dark-text-muted transition-colors text-lg`
+                }
               >
                 {item.label}
               </NavLink>
@@ -77,7 +79,9 @@ function Navbar() {
               <NavLink
                 key={item.id}
                 to={item.path}
-                className="font-medium text-gray-600 dark:text-dark-text-muted hover:text-orange-500 dark:hover:text-dark-text-main transition-colors"
+                className={({ isActive }) =>
+                  `relative font-medium ${isActive ? "text-orange-500 dark:text-white after:bg-orange-500 dark:after:bg-white after:rounded-full after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-5 after:h-0.75" : "hover:text-orange-500 dark:hover:text-dark-text-main"} text-gray-700 dark:text-dark-text-muted transition-colors text-base pb-1.5`
+                }
               >
                 {item.label}
               </NavLink>

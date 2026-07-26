@@ -9,6 +9,7 @@ const PPDB = lazy(() => import("../../pages/main/PPDB"));
 const Profile = lazy(() => import("../../pages/main/Profile"));
 const SkillProgram = lazy(() => import("../../pages/main/SkillProgram"));
 const Blog = lazy(() => import("../../pages/main/Blog"));
+const Contact = lazy(() => import("../../pages/main/Contact"));
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: "/program-keahlian/:slug", element: <ProgramDetail /> },
       { path: "/berita", element: <Blog /> },
       { path: "/berita/:id", element: <BlogDetail /> },
+      { path: "/kontak", element: <Contact /> },
     ],
   },
 ]);
