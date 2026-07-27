@@ -3,7 +3,15 @@ import { Link, NavLink } from "react-router-dom";
 import { useTheme } from "../../hooks/useTheme";
 import { LuX, LuMenu } from "react-icons/lu";
 import { navItems } from "../../constant/data";
-import { LuMoon, LuSun } from "react-icons/lu";
+import {
+  LuMoon,
+  LuSun,
+  LuSparkles,
+  LuUserPlus,
+  LuBookOpen,
+  LuBriefcase,
+  LuGraduationCap,
+} from "react-icons/lu";
 import logo from "../../assets/images/logo.png";
 
 function Navbar() {
@@ -86,6 +94,92 @@ function Navbar() {
                 {item.label}
               </NavLink>
             ))}
+
+            <div className="relative group">
+              <button className="font-medium text-gray-700 hover:text-orange-500 dark:text-dark-text-muted dark:hover:text-white transition-colors text-base pb-1.5">
+                Layanan Siswa
+              </button>
+
+              <div className="absolute top-full -left-40 hidden group-hover:block w-145 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 p-6 z-50 transition-all duration-200">
+                <div className="flex items-center gap-2 pb-3 mb-4 border-b border-gray-100 dark:border-gray-700 text-xs font-bold uppercase tracking-wider text-orange-500">
+                  <LuSparkles size={14} />
+                  <span>Layanan & Fasilitas Utama</span>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <Link
+                    to="/ppdb"
+                    className="group/item flex items-start gap-3.5 p-3 rounded-xl hover:bg-orange-100/60 dark:hover:bg-gray-700/50 transition-colors duration-150"
+                  >
+                    <div className="p-2.5 bg-orange-500/70 dark:bg-orange-950/40 text-white dark:text-orange-400 rounded-xl group-hover/item:scale-105 transition-transform">
+                      <LuUserPlus size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-800 dark:text-white group-hover/item:text-orange-600 dark:group-hover/item:text-orange-400 transition-colors">
+                        PPDB
+                      </h4>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mt-0.5">
+                        Informasi pendaftaran, alur, & syarat penerimaan siswa
+                        baru.
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    to="/fasilitas"
+                    className="group/item flex items-start gap-3.5 p-3 rounded-xl hover:bg-orange-100/60 dark:hover:bg-gray-700/50 transition-colors duration-150"
+                  >
+                    <div className="p-2.5 bg-orange-500/70 dark:bg-orange-950/40 text-white dark:text-orange-400 rounded-xl group-hover/item:scale-105 transition-transform">
+                      <LuBookOpen size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-800 dark:text-white group-hover/item:text-orange-600 dark:group-hover/item:text-orange-400 transition-colors">
+                        Fasilitas Belajar
+                      </h4>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mt-0.5">
+                        Sarana laboratorium, perpustakaan, & ruang praktik
+                        modern.
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    to="/bkk"
+                    className="group/item flex items-start gap-3.5 p-3 rounded-xl hover:bg-orange-100/60 dark:hover:bg-gray-700/50 transition-colors duration-150"
+                  >
+                    <div className="p-2.5 bg-orange-500/70 dark:bg-orange-950/40 text-white dark:text-orange-400 rounded-xl group-hover/item:scale-105 transition-transform">
+                      <LuBriefcase size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-800 dark:text-white group-hover/item:text-orange-600 dark:group-hover/item:text-orange-400 transition-colors">
+                        BKK (Bursa Kerja)
+                      </h4>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mt-0.5">
+                        Layanan penyaluran kerja alumni & kemitraan dunia
+                        industri.
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    to="/prestasi"
+                    className="group/item flex items-start gap-3.5 p-3 rounded-xl hover:bg-orange-100/60 dark:hover:bg-gray-700/50 transition-colors duration-150"
+                  >
+                    <div className="p-2.5 bg-orange-500/70 dark:bg-orange-950/40 text-white dark:text-orange-400 rounded-xl group-hover/item:scale-105 transition-transform">
+                      <LuGraduationCap size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-800 dark:text-white group-hover/item:text-orange-600 dark:group-hover/item:text-orange-400 transition-colors">
+                        Prestasi Siswa
+                      </h4>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mt-0.5">
+                        Catatan pencapaian & kejuaraan yang diraih para siswa.
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </nav>
 
           <button className="btn-primary px-6 py-2.5 text-sm font-semibold transition-all duration-200">

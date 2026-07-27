@@ -266,7 +266,6 @@ export const socialMedia = [
 
 export const quickLinks = [
   { label: "Informasi PPDB", path: "/ppdb" },
-  { label: "Program Keahlian", path: "/program-keahlian" },
   { label: "Fasilitas Belajar", path: "/fasilitas" },
   { label: "Bursa Kerja Khusus (BKK)", path: "/bkk" },
 ];
