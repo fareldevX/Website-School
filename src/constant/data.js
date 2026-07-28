@@ -392,3 +392,97 @@ export const newsArticles = [
     isFeatured: false,
   },
 ];
+
+export const facilitiesData = [
+  {
+    id: 1,
+    title: "Laboratorium Komputer & Network Infrastructure",
+    category: "Praktik Keahlian",
+    description:
+      "Dilengkapi server berstandar industri, perangkat jaringan Cisco/MikroTik, dan PC spesifikasi tinggi untuk praktik Jaringan Komputer & Telekomunikasi.",
+    image:
+      "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80",
+    features: [
+      "40 Unit PC High-Spec",
+      "Router & Switch Cisco/MikroTik",
+      "Full AC & UPS Backup",
+    ],
+  },
+  {
+    id: 2,
+    title: "Bengkel Teknik Otomotif & Servis Presisi",
+    category: "Bengkel Praktik",
+    description:
+      "Tempat praktik siswa program Teknik Otomotif dengan peralatan modern seperti Car Lift, Engine Analyzer, dan peralatan diagnosis injeksi digital.",
+    image:
+      "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80",
+    features: [
+      "Engine Diagnostic Scanner",
+      "Hydraulic Car Lift",
+      "Stand Engine Injeksi",
+    ],
+  },
+  {
+    id: 3,
+    title: "Perpustakaan Digital (E-Library) & Lounge",
+    category: "Umum",
+    description:
+      "Ruang baca nyaman ber-AC yang menyediakan ribuan koleksi buku fisik, modul pembelajaran, serta terminal akses E-Library interaktif.",
+    image:
+      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80",
+    features: [
+      "Koleksi 5000+ Buku & E-Book",
+      "Akses Komputer E-Library",
+      "Ruang Baca Lesehan Ber-AC",
+    ],
+  },
+  {
+    id: 4,
+    title: "Bengkel Teknik Mesin & Fabrikasi CNC",
+    category: "Bengkel Praktik",
+    description:
+      "Dilengkapi mesin bubut, mesin frais, serta mesin CNC presisi tinggi untuk menghasilkan produk-produk manufaktur kualitas industri.",
+    image:
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+    features: [
+      "Mesin CNC Milling & Lathe",
+      "Alat Las MMA, MIG, TIG",
+      "Area Fabrikasi Logam",
+    ],
+  },
+  {
+    id: 5,
+    title: "Studio Multimedia & Laboratorium Desain",
+    category: "Praktik Keahlian",
+    description:
+      "Fasilitas pembuatan konten digital, pemrosesan video, editing grafis, serta studio foto/video lengkap dengan tata cahaya profesional.",
+    image:
+      "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=800&q=80",
+    features: [
+      "Studio Green Screen & Lighting",
+      "Kamera Profesional",
+      "PC Software Design & Render",
+    ],
+  },
+  {
+    id: 6,
+    title: "Lap. Olahraga & Area Terbuka Hijau (Adiwiyata)",
+    category: "Umum",
+    description:
+      "Lapangan serbaguna untuk olahraga Basket, Futsal, dan Voli yang dikelilingi oleh area hijau asri berkonsep Sekolah Adiwiyata.",
+    image:
+      "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80",
+    features: [
+      "Lapangan Basket & Futsal",
+      "Taman Hijau Asri & Biopori",
+      "Tribun Penonton",
+    ],
+  },
+];
+
+export const facilitiesCategories = [
+  "Semua",
+  "Praktik Keahlian",
+  "Bengkel Praktik",
+  "Umum",
+];

@@ -126,7 +126,7 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    to="/fasilitas"
+                    to="/fasilitas-belajar"
                     className="group/item flex items-start gap-3.5 p-3 rounded-xl hover:bg-orange-100/60 dark:hover:bg-gray-700/50 transition-colors duration-150"
                   >
                     <div className="p-2.5 bg-orange-500/70 dark:bg-orange-950/40 text-white dark:text-orange-400 rounded-xl group-hover/item:scale-105 transition-transform">
