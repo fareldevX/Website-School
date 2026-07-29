@@ -486,3 +486,71 @@ export const facilitiesCategories = [
   "Bengkel Praktik",
   "Umum",
 ];
+
+export const jobListings = [
+  {
+    id: 1,
+    title: "Network & Infrastructure Technician",
+    company: "PT Telekomunikasi Indonesia / Partner",
+    location: "Kawasan Industri Cikarang",
+    type: "Full Time",
+    category: "TKJ / Network",
+    deadline: "15 Agustus 2026",
+    requirements: [
+      "Lulusan SMK Jurusan TKJ / Teknik Otomasi",
+      "Memahami dasar Routing, Switching & Fiber Optic",
+      "Sehat jasmani & bersedia ditempatkan di Cikarang",
+    ],
+  },
+  {
+    id: 2,
+    title: "Junior Maintenance & Quality Control Staff",
+    company: "PT Astra Honda Motor (DUDI Partner)",
+    location: "Karawang, Jawa Barat",
+    type: "Rekrutmen Khusus BKK",
+    category: "Teknik Otomotif / Mesin",
+    deadline: "20 Agustus 2026",
+    requirements: [
+      "Pria/Wanita, Usia Max 21 Tahun",
+      "Lulusan TBO / TKM / TPL SMKN 1 Adiwerna",
+      "Tinggi badan Min 165 cm (Pria) / 155 cm (Wanita)",
+    ],
+  },
+  {
+    id: 3,
+    title: "Operator Mesin CNC & Mold Maker",
+    company: "PT Komatsu Indonesia",
+    location: "Jakarta Timur",
+    type: "Full Time",
+    category: "Teknik Mesin",
+    deadline: "25 Agustus 2026",
+    requirements: [
+      "Mampu membaca gambar teknik / CAD 2D/3D",
+      "Pengalaman/Pernah Praktik Mesin Bubut & CNC",
+      "Disiplin tinggi & sanggup bekerja shift",
+    ],
+  },
+  {
+    id: 4,
+    title: "Junior Web & Frontend Developer (Intern/PKL)",
+    company: "Software House & Digital Agency",
+    location: "Semarang (Hybrid)",
+    type: "Magang / PKL",
+    category: "RPL / IT",
+    deadline: "30 Agustus 2026",
+    requirements: [
+      "Siswa Aktif Kelas XI/XII atau Alumni RPL",
+      "Menguasai HTML, CSS, JavaScript (React/Tailwind diprioritaskan)",
+      "Memiliki portofolio proyek web sederhana",
+    ],
+  },
+];
+
+export const partnerCompanies = [
+  "PT Astra Honda Motor",
+  "PT Komatsu Indonesia",
+  "PT Telkom Indonesia",
+  "PT PLN (Persero)",
+  "PT Daihatsu Motor",
+  "PT Epson Indonesia",
+];
